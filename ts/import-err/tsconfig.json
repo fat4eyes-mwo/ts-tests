@@ -14,9 +14,9 @@
 			"lib" : ["dom","es6","dom.iterable","scripthost","es2016"],
 			"noEmitOnError" : true,
 			"forceConsistentCasingInFileNames": true,
-			"outDir" : "build/",
+			"outDir": "./build",
     },
     "include" : [
-        "ts/**/*.ts"
+        "*.ts"
     ]
 }

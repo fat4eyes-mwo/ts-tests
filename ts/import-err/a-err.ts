@@ -1,4 +1,4 @@
-import {B} from "./b";
+import {B} from "./b"; //this import seems to cause lookup of A.foo and A.bar to fail below
 namespace A {
 
 	export class AA {

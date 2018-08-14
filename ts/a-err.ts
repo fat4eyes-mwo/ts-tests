@@ -1,5 +1,12 @@
 import {B} from "./b";
 namespace A {
+
+	export class AA {
+		constructor() {
+
+		}
+	}
+
 	export function error() {
 		//false errors, unable to find Foo and bar defined in aa.ts. 
 		//Seems to be caused by the type import above.
@@ -7,5 +14,6 @@ namespace A {
 		let b = A.bar();
 		
 		let c : B; //lookup ok
+		let d = new A.AA(); //lookup ok
 	}
 }
